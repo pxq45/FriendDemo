@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TWPXQMyFriendsVC.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,13 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    UIWindow * window = [[[UIApplication sharedApplication] delegate] window];
+    TWPXQMyFriendsVC * vc = [[TWPXQMyFriendsVC alloc]init];
+    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    window.rootViewController = nav;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
