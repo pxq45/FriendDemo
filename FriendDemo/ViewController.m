@@ -10,7 +10,9 @@
 #import "TWPXQMyFriendsVC.h"
 
 @interface ViewController ()
-
+{
+    int a;
+}
 @end
 
 @implementation ViewController
